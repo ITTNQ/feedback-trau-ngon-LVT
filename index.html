@@ -145,7 +145,7 @@
         alert('Anh/chị vui lòng nhập số điện thoại gồm đúng 10 chữ số.');
         return;
       }
-      data.restaurant = 'CS 1';
+      data.restaurant = 'CS LVT';
       try{
         await fetch(scriptURL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
         thankYouText.textContent = `Cảm ơn anh/chị ${data.customerName} đã đánh giá!`;
